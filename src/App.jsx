@@ -56,7 +56,7 @@ const App = () => {
       {isLoading && <Loader />}
       <header className="Header">
         <img src={AI} alt="AI logo" className="Logo" />
-        <h2 className="Title">Chatbot</h2>
+        <h2 className="Title">Brain AI</h2>
       </header>
       <div className="ChatContainer">
         <Chat message={message} />
