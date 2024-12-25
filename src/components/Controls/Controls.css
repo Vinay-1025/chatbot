@@ -1,0 +1,62 @@
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.textareacontainer {
+    flex-grow: 1;
+    padding: 15px 16px;
+    line-height: 0;
+    border-radius: 16px;
+    background: light-dark(#fff, #212121);
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: light-dark(#fff, #212121);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: light-dark(#0d0d0d, #2d2d2d);
+}
+
+.button:disabled {
+    opacity: 0.35;
+}
+
+.controls-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.clear-button {
+    background-color: light-dark(#0d0d0d,#3e3e3e);
+    color: light-dark(#fff,#efefef);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.clear-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.clear-button:hover {
+    background-color: light-dark(#000,#6c6c6c);
+}

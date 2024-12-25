@@ -1,0 +1,49 @@
+.loaderwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: light-dark(#f3f3f3,#171717);
+    opacity: 0.6;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid light-dark(#0000,#212);
+    border-radius: 50%;
+    border-color: light-dark(#212ea0,#a406cb) light-dark(#0d0d0d,#212ea000);
+    animation: l16 1s infinite linear;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.loader::before {
+    border-color: #ccc #0000;
+    animation: inherit;
+    animation-duration: .5s;
+    animation-direction: reverse;
+}
+
+.loader::after {
+    margin: 8px;
+}
+
+@keyframes l16 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
